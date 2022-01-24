@@ -1,0 +1,22 @@
+
+
+@mixin visual__global {
+    background-color: $Quinary;
+    border-radius: 10px;
+    padding: 4%;
+    margin-top: 10%;
+}
+
+@mixin margin__bloc {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+@mixin padding__bloc {
+    padding-left: 4%;
+}
+
+@mixin Margin__bottom{
+    margin-bottom: 4%; 
+}
