@@ -1,0 +1,154 @@
+/* Déclaration mixin : @include *mixin name* */
+
+@mixin Shrikhand {
+    font-family: 'Shrikhand', italic;
+}
+
+@mixin Roboto__bold {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin a_vanilla {
+    text-decoration: none;
+    color: initial;
+}
+
+@mixin Center {
+    text-align: center;
+}
+
+@mixin Margin {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@mixin Width {
+    width: 100%
+}
+
+@mixin Weight {
+    font-weight: bold;
+}
+
+@mixin Margin__tuto {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+@mixin Icons__tuto {
+    color: $Octal;
+    padding-right: 15px;
+}
+
+@mixin Margin_footer {
+    padding: 6%;
+    padding-bottom: 7%;
+    margin-bottom: -8%;
+}
+
+@mixin Survol {
+    &:hover {
+        i {
+            color: $Primary;
+        }
+
+        background-color: rgba(147, 86, 220, 0.15);
+    }
+}
+
+@mixin Cover {
+    object-fit: cover;
+}
+
+@mixin Border__radius__top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@mixin Border__radius__bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+@mixin Pastille {
+    position: absolute;
+    background-color: #9356DC;
+    color: #f6f6f6;
+    -webkit-transform: translate(-38px, 2px);
+    transform: translate(-40px, -5px);
+    border-radius: 50%;
+    margin: auto;
+    font-size: 10px;
+    padding: 2%;
+}
+
+@mixin Pastille__desktop {
+    position: absolute;
+    background-color: #9356DC;
+    color: #f6f6f6;
+    -webkit-transform: translate(-38px, 2px);
+    transform: translate(-45px, -5px);
+    border-radius: 50%;
+    margin: auto;
+    font-size: 10px;
+    padding: 10px;
+}
+
+@mixin Encoche {
+    transform: translate(-25px, 50px);
+    border: 1px solid transparent;
+    background-color: #99e2d0;
+    border-radius: 3px;
+    width: fit-content;
+    margin-left: auto;
+
+    p {
+        color: rgba(0, 135, 102, 255);
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+        @include Weight;
+    }
+}
+
+@mixin Encoche__desktop {
+    transform: translate(-150px, 50px);
+    border: 1px solid transparent;
+    background-color: #99e2d0;
+    border-radius: 3px;
+    width: fit-content;
+    margin-left: auto;
+
+    p {
+        color: rgba(0, 135, 102, 255);
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+        @include Weight;
+    }
+}
+
+@mixin Grid__mobile {
+    display: grid;
+    height: 1350px;
+    background-color: $Quinary;
+    margin-top: 10%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+    gap: 0px 0px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    grid-template-areas:
+        "resto__title"
+        "card__1"
+        "card__2"
+        "card__3"
+        "card__4";
+}
+
+
+
