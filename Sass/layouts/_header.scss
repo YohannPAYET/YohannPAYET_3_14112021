@@ -1,0 +1,50 @@
+.header__title,
+.slogan {
+    @include Center;
+}
+
+a {
+    @include a_vanilla;
+}
+
+.header__title {
+    @include Shrikhand;
+    margin: 0;
+    padding: 1rem;
+    box-shadow: 0 2px 0 .5px rgba(0, 0, 0, .25);
+    position: relative;
+}
+
+.locate {
+    margin: 0;
+    margin-left: 0;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    color: $Senary;
+    background-color: $Quaternary;
+    font-size: 15px;
+    padding: 8px;
+
+    .locate__text {
+        margin-left: 10px;
+        font-size: 15px;
+        @include Weight;
+    }
+}
+
+.bloc__slogan {
+    height: 300px;
+}
+
+.slogan {
+    background-color: $Quinary;
+    height: auto;
+    padding: 10px;
+    font-size: 22px;
+
+    .slogan__title {
+        @include Weight;
+    }
+
+}

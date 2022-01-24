@@ -1,0 +1,56 @@
+.bloc__tutorial {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 0px;
+    grid-area: 1 / 1 / 3 / 5;
+}
+
+.tutorial__title {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: 5%;
+    
+}
+
+.tutorial__step1 {
+    grid-area: 2 / 1 / 3 / 2;
+    margin-left: 40%;
+    @include Survol;
+    @include Button__vanilla;
+
+    span {
+        @include Pastille__desktop;
+    }
+}
+
+.tutorial__step2 {
+    grid-area: 2 / 2 / 3 / 3;
+    margin-left: 25%;
+    margin-right: 15%;
+    @include Survol;
+
+    span {
+        @include Pastille__desktop;
+    }
+
+    @include Button__vanilla;
+}
+
+.tutorial__step3 {
+    grid-area: 2 / 3 / 3 / 4;
+    margin-left: 10%;
+    @include Survol;
+
+    span {
+        @include Pastille__desktop;
+
+    }
+
+    @include Button__vanilla;
+    margin-right: 30%;
+}
+
+.icons__specs {
+    @include Icons__tuto;
+}

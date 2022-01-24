@@ -1,0 +1,26 @@
+@mixin Button__default {
+    box-shadow: 5px 5px 10px -8px $Septanary;
+    background: linear-gradient(to bottom, $Secondary 5%, $Primary 100%);
+    background-color: $Secondary;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: $Quinary;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+}
+
+@mixin Button__vanilla {
+    box-shadow: 5px 5px 10px -8px $Septanary;
+    background: $Quinary;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    color: $Septanary;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 22px 31px;
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+@import "../utils/colors";
+
+
+@mixin Footer {
+    background-color: $Senary;
+    @include Margin_footer;
+
+    .icons__specs {
+        color: $Quinary !important;
+        @include Icons__tuto;
+    }
+
+    & a {
+        color: $Quinary;
+        @include Weight;
+    }
+
+    .footer__title {
+        margin-bottom: 3%;
+    }
+
+    .footer__logo {
+        color: $Quinary;
+        @include Shrikhand;
+    }
+}
