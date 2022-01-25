@@ -1,0 +1,270 @@
+@import "mixin.scss";
+@import "../Sass/utils/colors";
+@import "../Sass/base/normes";
+@import "../Sass/base/polices";
+@import "../Sass/components/bouton";
+@import "../Sass/layouts/footer";
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__return {
+  margin-left: 10rem
+}
+
+a {
+  @include a_vanilla;
+}
+
+.header__title {
+  width: 100%;
+  text-align: center;
+  @include Shrikhand;
+}
+
+.header__banner {
+  margin-top: 3%;
+  width: 100%;
+  margin-top: 0;
+  height: 80%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.btn__command {
+  margin-top: 10%;
+  margin-left: 50%;
+  @include Button__default;
+
+  &:hover {
+    background: linear-gradient(to bottom, $Primary 5%, $Secondary 100%);
+    box-shadow: 8px 8px 12px -10px $Septanary;
+    background-color: $Primary;
+    opacity: 0.7;
+  }
+}
+
+.bloc__page {
+  width: 100%;
+  margin-top: 35%;
+  position: absolute;
+  background-color: $Quaternary;
+  height: 85%;
+  border-radius: 50px 50px 0 0;
+}
+
+.bloc__page-title {
+  margin-top: 3%;
+  @include Shrikhand;
+  @include padding__bloc;
+}
+
+.bloc__menu {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 2%;
+
+  p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .menu__title-1 {
+    width: fit-content;
+    height: fit-content;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: $Tertiary;
+    }
+  }
+
+  .menu__title-2 {
+    width: fit-content;
+    height: fit-content;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: $Tertiary;
+    }
+  }
+
+  .menu__title-3 {
+    width: fit-content;
+    height: fit-content;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: $Tertiary;
+    }
+  }
+
+  .bloc__menu-entree {
+    width: 33%;
+    margin-left: -5%;
+  }
+
+  .bloc__menu--entree-1 {
+    @include visual__global;
+    @include hover__global;
+  }
+
+  .bloc__menu--entree-2 {
+    @include visual__global;
+    @include hover__global;
+  }
+
+  .bloc__menu--entree-3 {
+    @include visual__global;
+    @include hover__global;
+  }
+
+  .bloc__menu--entree-4 {
+    @include visual__global;
+    @include hover__global;
+  }
+
+  .bloc__menu-plat {
+    width: 33%;
+    margin-left: -5%;
+  }
+
+  .bloc__menu--plat-1 {
+    @include visual__global;
+    @include hover__global-1;
+  }
+
+.bloc__menu--plat-2 {
+  @include visual__global;
+  @include hover__global-2;
+
+}
+
+.bloc__menu--plat-3 {
+  @include visual__global;
+  @include hover__global-3;
+}
+
+.bloc__menu-dessert {
+  width: 33%;
+  margin-left: -5%;
+}
+
+.bloc__menu--dessert-1 {
+  @include visual__global;
+  @include hover__global;
+}
+
+.bloc__menu--dessert-2 { 
+  @include visual__global;
+  @include hover__global;
+}
+
+.bloc__menu--dessert-3 { 
+  @include visual__global;
+  @include hover__global;
+}
+}
+
+.price {
+  margin-right: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.bloc__menu--entree-check {
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px -8px $Septanary;
+  position: relative;
+  left: 60px;
+  top: -9px;
+  height: 70px;
+  width: 50px;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-check-circle {
+  color: $Quinary;
+  font-size: 1.7rem;
+}
+
+
+.bloc__menu--item {
+  animation: appear 3s 1 normal forwards;
+  box-shadow: 5px 5px 10px -8px $Septanary;
+
+  $items: 4;
+
+  @for $i from 1 through $items {
+    &:nth-child(#{$i}) {
+      animation-delay: 200ms * $i;
+    }
+  }
+
+  &:hover {
+    .fa-check-circle {
+      animation: check__rotate 1s ease-in-out;
+      -webkit-animation: check__rotate 1s ease-in-out;
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes check__rotate {
+  0% {
+    transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    -moz-transform: rotate(-270deg);
+    -ms-transform: rotate(-270deg);
+    -o-transform: rotate(-270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+
+.bloc__footer {
+  @include Footer;
+  margin-top: 95%;
+}
+
+// @media only screen and (min-width: 360px) and (max-width: 900px)
