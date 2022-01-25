@@ -1,10 +1,70 @@
-
-
 @mixin visual__global {
     background-color: $Quinary;
     border-radius: 10px;
-    padding: 4%;
+    padding: 2%;
     margin-top: 10%;
+    height: 70px;
+    width: 85%;
+    overflow: hidden;
+    display: flex;
+}
+
+@mixin hover__global {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 59px;
+        }
+    }
+}
+
+@mixin hover__global-1 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 52px;
+        }
+    }
+}
+@mixin hover__global-2 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 54px;
+        }
+    }
+}
+@mixin hover__global-3 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 54px;
+        }
+    }
 }
 
 @mixin margin__bloc {
@@ -17,15 +77,6 @@
     padding-left: 4%;
 }
 
-@mixin hover__global {
-    cursor: pointer;
-    margin-right: 4rem;
-    transition: all 1s;
-    border-radius: 10px 0px 0px 10px;
-    
-}
-
-@mixin Margin__bottom{
+@mixin Margin__bottom {
     margin-bottom: 4%;
-    
 }
