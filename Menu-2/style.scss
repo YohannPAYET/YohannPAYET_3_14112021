@@ -52,7 +52,7 @@ a {
   margin-top: 35%;
   position: absolute;
   background-color: $Quaternary;
-  height: 70%;
+  height: 85%;
   border-radius: 50px 50px 0 0;
 }
 
@@ -136,6 +136,11 @@ a {
     @include hover__global;
   }
 
+  .bloc__menu--entree-4 {
+    @include visual__global;
+    @include hover__global;
+  }
+
   .bloc__menu-plat {
     width: 33%;
     margin-left: -5%;
@@ -211,7 +216,7 @@ a {
   animation: appear 3s 1 normal forwards;
   box-shadow: 5px 5px 10px -8px $Septanary;
 
-  $items: 3;
+  $items: 4;
 
   @for $i from 1 through $items {
     &:nth-child(#{$i}) {
@@ -259,7 +264,7 @@ a {
 
 .bloc__footer {
   @include Footer;
-  margin-top: 88%;
+  margin-top: 95%;
 }
 
 // @media only screen and (min-width: 360px) and (max-width: 900px)
