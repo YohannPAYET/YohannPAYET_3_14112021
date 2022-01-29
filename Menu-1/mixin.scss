@@ -34,7 +34,7 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 52px;
+            left: 53px;
         }
     }
 }
@@ -48,7 +48,7 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 54px;
+            left: 49px;
         }
     }
 }
@@ -62,7 +62,37 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 54px;
+            left: 52px;
+        }
+    }
+}
+
+@mixin hover__global-4 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 55px;
+        }
+    }
+}
+
+@mixin hover__global-5{
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 51px;
         }
     }
 }

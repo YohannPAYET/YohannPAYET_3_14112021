@@ -1,16 +1,13 @@
-@import "../YohannPAYET_3_14112021/Sass/base/normes";
-@import "../YohannPAYET_3_14112021/Sass/base/polices";
-@import "../YohannPAYET_3_14112021/Sass/components/bouton";
-@import "../YohannPAYET_3_14112021/Sass/components/heart";
-@import "../YohannPAYET_3_14112021/Sass/components/loader";
-@import "../YohannPAYET_3_14112021/Sass/layouts/footer";
-@import "../YohannPAYET_3_14112021/Sass/layouts/header";
-@import "../YohannPAYET_3_14112021/Sass/pages/tutorial";
-@import "../YohannPAYET_3_14112021/Sass/utils/colors";
+@import "Sass/base/normes";
+@import "Sass/base/polices";
+@import "Sass/components/bouton";
+@import "Sass/components/heart";
+@import "Sass/components/loader";
+@import "Sass/layouts/footer";
+@import "Sass/layouts/header";
+@import "Sass/pages/tutorial";
+@import "Sass/utils/colors";
 @import "mixin.scss";
-
-
-@import "../YohannPAYET_3_14112021/Sass/utils/colors";
 
 
 @media only screen and (min-width: 700px){

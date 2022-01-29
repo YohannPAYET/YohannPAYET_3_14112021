@@ -3,6 +3,7 @@
 @import "../Sass/base/normes";
 @import "../Sass/base/polices";
 @import "../Sass/components/bouton";
+@import "../Sass/components/heart";
 @import "../Sass/layouts/footer";
 
 .header__menu {
@@ -52,14 +53,27 @@ a {
   margin-top: 35%;
   position: absolute;
   background-color: $Quaternary;
-  height: 70%;
+  height: 85%;
   border-radius: 50px 50px 0 0;
 }
 
 .bloc__page-title {
   margin-top: 3%;
+  height: 50px;
   @include Shrikhand;
   @include padding__bloc;
+}
+
+.fa-heart{
+  margin-top: 30px;
+}
+
+.__solid {
+  transform: translate(-87px, -113px);
+
+  &:hover {
+      transform: translate(-87px, -123px);
+  }
 }
 
 .bloc__menu {
@@ -133,7 +147,7 @@ a {
 
   .bloc__menu--entree-3 {
     @include visual__global;
-    @include hover__global;
+    @include hover__global-1;
   }
 
   .bloc__menu-plat {
@@ -143,18 +157,18 @@ a {
 
   .bloc__menu--plat-1 {
     @include visual__global;
-    @include hover__global-1;
+    @include hover__global-2;
   }
 
 .bloc__menu--plat-2 {
   @include visual__global;
-  @include hover__global-2;
+  @include hover__global-3;
 
 }
 
 .bloc__menu--plat-3 {
   @include visual__global;
-  @include hover__global-3;
+  @include hover__global;
 }
 
 .bloc__menu-dessert {
@@ -169,12 +183,12 @@ a {
 
 .bloc__menu--dessert-2 { 
   @include visual__global;
-  @include hover__global;
+  @include hover__global-4;
 }
 
 .bloc__menu--dessert-3 { 
   @include visual__global;
-  @include hover__global;
+  @include hover__global-5;
 }
 }
 
@@ -259,7 +273,7 @@ a {
 
 .bloc__footer {
   @include Footer;
-  margin-top: 88%;
+  margin-top: 80rem;
 }
 
 // @media only screen and (min-width: 360px) and (max-width: 900px)
