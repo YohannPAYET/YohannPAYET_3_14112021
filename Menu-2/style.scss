@@ -153,8 +153,10 @@ a {
   .bloc__menu--entree-4 {
     @include visual__global;
     @include hover__global;
-  }
 
+    .bloc__menu--entree-check {
+      top: -10px;
+    }}
   .bloc__menu-plat {
     width: 33%;
     margin-left: -5%;

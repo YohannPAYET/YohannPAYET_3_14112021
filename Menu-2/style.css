@@ -354,6 +354,10 @@ a {
   left: 59px;
 }
 
+.bloc__menu .bloc__menu--entree-4 .bloc__menu--entree-check {
+  top: -10px;
+}
+
 .bloc__menu .bloc__menu-plat {
   width: 33%;
   margin-left: -5%;
