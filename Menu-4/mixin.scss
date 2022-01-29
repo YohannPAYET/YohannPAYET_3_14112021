@@ -34,10 +34,11 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 52px;
+            left: 58px;
         }
     }
 }
+
 @mixin hover__global-2 {
     &:hover {
         width: 70%;
@@ -48,21 +49,7 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 54px;
-        }
-    }
-}
-@mixin hover__global-3 {
-    &:hover {
-        width: 70%;
-        transition: all 1s;
-        overflow: visible;
-        border-radius: 10px 0 0 10px;
-
-        .bloc__menu--entree-check {
-            position: relative;
-            transition: all 1s;
-            left: 54px;
+            left: 56px;
         }
     }
 }

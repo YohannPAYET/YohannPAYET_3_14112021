@@ -3,6 +3,7 @@
 @import "../Sass/base/normes";
 @import "../Sass/base/polices";
 @import "../Sass/components/bouton";
+@import "../Sass/components/heart";
 @import "../Sass/layouts/footer";
 
 .header__menu {
@@ -52,20 +53,33 @@ a {
   margin-top: 35%;
   position: absolute;
   background-color: $Quaternary;
-  height: 85%;
+  height: 70%;
   border-radius: 50px 50px 0 0;
 }
 
 .bloc__page-title {
-  margin-top: 3%;
+  height: 50px;
   @include Shrikhand;
   @include padding__bloc;
+}
+
+.fa-heart {
+  margin-top: 30px;
+  transform: translate(-87px, 6px);
+}
+
+.__solid {
+  transform: translate(84px, -47px);
+
+  &:hover {
+    transform: translate(83px, -56px);
+  }
 }
 
 .bloc__menu {
   display: flex;
   margin-left: 50px;
-  margin-top: 2%;
+  margin-top: 3%;
 
   p {
     white-space: nowrap;
@@ -146,36 +160,36 @@ a {
     @include hover__global-1;
   }
 
-.bloc__menu--plat-2 {
-  @include visual__global;
-  @include hover__global-2;
+  .bloc__menu--plat-2 {
+    @include visual__global;
+    @include hover__global-2;
 
-}
+  }
 
-.bloc__menu--plat-3 {
-  @include visual__global;
-  @include hover__global-3;
-}
+  .bloc__menu--plat-3 {
+    @include visual__global;
+    @include hover__global-3;
+  }
 
-.bloc__menu-dessert {
-  width: 33%;
-  margin-left: -5%;
-}
+  .bloc__menu-dessert {
+    width: 33%;
+    margin-left: -5%;
+  }
 
-.bloc__menu--dessert-1 {
-  @include visual__global;
-  @include hover__global;
-}
+  .bloc__menu--dessert-1 {
+    @include visual__global;
+    @include hover__global;
+  }
 
-.bloc__menu--dessert-2 { 
-  @include visual__global;
-  @include hover__global;
-}
+  .bloc__menu--dessert-2 {
+    @include visual__global;
+    @include hover__global;
+  }
 
-.bloc__menu--dessert-3 { 
-  @include visual__global;
-  @include hover__global;
-}
+  .bloc__menu--dessert-3 {
+    @include visual__global;
+    @include hover__global;
+  }
 }
 
 .price {

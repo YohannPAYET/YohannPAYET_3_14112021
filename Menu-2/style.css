@@ -13,6 +13,65 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.fa-heart {
+  font-size: 1.5rem;
+  -webkit-transform: translate(-85px, -60px);
+          transform: translate(-85px, -60px);
+  margin-left: 85%;
+  cursor: pointer;
+}
+
+.__solid {
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transform: translate(-87px, -75px);
+          transform: translate(-87px, -75px);
+  color: transparent;
+  font-size: 1.8rem;
+  opacity: 0;
+}
+
+.__solid:hover {
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  opacity: 1;
+  -webkit-transform: translate(-87px, -86px);
+          transform: translate(-87px, -86px);
+}
+
+.__position {
+  -webkit-transform: translate(-150px, 50px);
+          transform: translate(-150px, 50px);
+}
+
+@media only screen and (min-width: 10px) and (max-width: 500px) {
+  .fa-heart {
+    font-size: 1.5rem;
+    -webkit-transform: translate(0px, -60px);
+            transform: translate(0px, -60px);
+    margin-left: 85%;
+    cursor: pointer;
+  }
+  .__solid {
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-transform: translate(-2px, -75px);
+            transform: translate(-2px, -75px);
+    color: transparent;
+    font-size: 1.8rem;
+    opacity: 0;
+  }
+  .__solid:hover {
+    -webkit-transition: all 500ms linear;
+    transition: all 500ms linear;
+    opacity: 1;
+    -webkit-transform: translate(-2px, -86px);
+            transform: translate(-2px, -86px);
+  }
+}
+
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,7 +110,7 @@ a {
 }
 
 .btn__command {
-  margin-top: 10%;
+  margin-top: 9%;
   margin-left: 50%;
   -webkit-box-shadow: 5px 5px 10px -8px #000;
           box-shadow: 5px 5px 10px -8px #000;
@@ -90,8 +149,23 @@ a {
 
 .bloc__page-title {
   margin-top: 3%;
+  height: 50px;
   font-family: 'Shrikhand', italic;
   padding-left: 4%;
+}
+
+.fa-heart {
+  margin-top: 30px;
+}
+
+.__solid {
+  -webkit-transform: translate(-87px, -113px);
+          transform: translate(-87px, -113px);
+}
+
+.__solid:hover {
+  -webkit-transform: translate(-87px, -123px);
+          transform: translate(-87px, -123px);
 }
 
 .bloc__menu {
@@ -193,7 +267,7 @@ a {
   position: relative;
   -webkit-transition: all 1s;
   transition: all 1s;
-  left: 59px;
+  left: 52px;
 }
 
 .bloc__menu .bloc__menu--entree-2 {
@@ -310,7 +384,7 @@ a {
   position: relative;
   -webkit-transition: all 1s;
   transition: all 1s;
-  left: 52px;
+  left: 59px;
 }
 
 .bloc__menu .bloc__menu--plat-2 {
@@ -338,7 +412,7 @@ a {
   position: relative;
   -webkit-transition: all 1s;
   transition: all 1s;
-  left: 54px;
+  left: 59px;
 }
 
 .bloc__menu .bloc__menu--plat-3 {
@@ -366,7 +440,7 @@ a {
   position: relative;
   -webkit-transition: all 1s;
   transition: all 1s;
-  left: 54px;
+  left: 56px;
 }
 
 .bloc__menu .bloc__menu-dessert {
@@ -399,7 +473,7 @@ a {
   position: relative;
   -webkit-transition: all 1s;
   transition: all 1s;
-  left: 59px;
+  left: 49px;
 }
 
 .bloc__menu .bloc__menu--dessert-2 {

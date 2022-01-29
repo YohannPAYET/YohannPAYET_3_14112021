@@ -36,7 +36,7 @@ a {
 }
 
 .btn__command {
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 50%;
   @include Button__default;
 
@@ -273,7 +273,7 @@ a {
 
 .bloc__footer {
   @include Footer;
-  margin-top: 80rem;
+  margin-top: 83rem;
 }
 
 // @media only screen and (min-width: 360px) and (max-width: 900px)

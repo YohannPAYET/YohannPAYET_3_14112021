@@ -38,6 +38,7 @@
         }
     }
 }
+
 @mixin hover__global-2 {
     &:hover {
         width: 70%;
@@ -48,10 +49,11 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 54px;
+            left: 56px;
         }
     }
 }
+
 @mixin hover__global-3 {
     &:hover {
         width: 70%;
@@ -62,7 +64,7 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 54px;
+            left: 49px;
         }
     }
 }
