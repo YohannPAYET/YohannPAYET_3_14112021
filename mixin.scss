@@ -43,8 +43,6 @@
 @mixin Margin_footer {
     padding: 3%;
     padding-bottom: 4%;
-    margin-bottom: -4%;
-    margin-top: 2%;
 }
 
 @mixin Survol {
@@ -132,7 +130,6 @@
 @mixin Resto__margin {
     margin-top: 5%;
     margin-left: 15%;
-    padding-left: 5%;
     padding-top: 2%;
     margin-right: 15%;
 }

@@ -71,8 +71,6 @@ body {
   background-color: #353535;
   padding: 3%;
   padding-bottom: 4%;
-  margin-bottom: -4%;
-  margin-top: 2%;
 }
 
 .bloc__footer a {
@@ -423,11 +421,14 @@ a {
 .bloc__resto {
   margin-top: 5%;
   margin-left: 15%;
-  padding-left: 5%;
   padding-top: 2%;
   margin-right: 15%;
   border-radius: 20px 20px 0 0;
   background-color: #eaeaea;
+}
+
+.bloc__resto .resto__title {
+  padding: 2%;
 }
 
 .bloc__resto .flex__container-1,
@@ -442,6 +443,8 @@ a {
 
 .bloc__resto img {
   border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 420px;
   height: 300px;
 }
@@ -480,7 +483,15 @@ a {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 10px) and (max-width: 500px) {
+@media only screen and (min-width: 1005px) and (max-width: 1200px) {
+  .bloc__resto {
+    width: 100%;
+    margin: 0;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1004px) {
   .bloc__tutorial {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -506,9 +517,6 @@ a {
   }
   .bloc__resto img {
     width: 100%;
-  }
-  .bloc__footer {
-    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

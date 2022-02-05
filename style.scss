@@ -41,6 +41,10 @@
     @include Border__radius__top;
     background-color: $Quaternary;
 
+    .resto__title{
+        padding: 2%;
+    }
+
     .flex__container-1,
     .flex__container-2 {
         display: flex;
@@ -49,6 +53,7 @@
 
     img {
         @include Border__radius__top;
+        object-fit: cover;
         width: 420px;
         height: 300px;
     }
@@ -70,7 +75,15 @@
 @include Encoche__desktop;
 }
 
-@media only screen and (min-width: 10px) and (max-width: 500px) {
+@media only screen and (min-width: 1005px) and (max-width: 1200px) {
+    .bloc__resto{
+        width: 100%;
+        margin: 0;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1004px) {
 .bloc__tutorial{
     flex-direction: column;
     margin-left: 3%;
@@ -94,10 +107,6 @@
     img {
         width: 100%;
     }
-}
-
-.bloc__footer{
-    margin: 0;
 }
     
 }
