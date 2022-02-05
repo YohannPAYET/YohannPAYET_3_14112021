@@ -1,6 +1,6 @@
 .fa-heart {
     font-size: 1.5rem;
-    transform: translate(-85px, -60px);
+    transform: translate(-5px, -60px);
     margin-left: 85%;
     cursor: pointer;
 }
@@ -10,7 +10,7 @@
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     background-clip: text;
-    transform: translate(-87px, -75px);
+    transform: translate(-7px, -75px);
     color: transparent;
     font-size: 1.8rem;
     opacity: 0;
@@ -19,16 +19,9 @@
     &:hover {
         transition: all 500ms linear;
         opacity: 1;
-        transform: translate(-87px, -86px);
+        transform: translate(-8px, -86px);
     }
 }
-
-.__position {
-    transform: translate(-150px, 50px)
-}
-
-
-
 
 @media only screen and (min-width: 10px) and (max-width: 500px) {
     .fa-heart {

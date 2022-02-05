@@ -44,6 +44,7 @@
     padding: 3%;
     padding-bottom: 4%;
     margin-bottom: -4%;
+    margin-top: 2%;
 }
 
 @mixin Survol {
@@ -61,15 +62,12 @@
 }
 
 @mixin Border__radius__top {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 @mixin Border__radius__bottom {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0 20px 20px;
 }
-
 
 @mixin Pastille {
     position: absolute;
@@ -114,7 +112,7 @@
 }
 
 @mixin Encoche__desktop {
-    transform: translate(-150px, 50px);
+    transform: translate(-40px, 50px);
     border: 1px solid transparent;
     background-color: #99e2d0;
     border-radius: 3px;
@@ -131,24 +129,12 @@
     }
 }
 
-@mixin Grid__mobile {
-    display: grid;
-    height: 1350px;
-    background-color: $Quinary;
-    margin-top: 10%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
-    gap: 0px 0px;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 0;
-    grid-template-areas:
-        "resto__title"
-        "card__1"
-        "card__2"
-        "card__3"
-        "card__4";
+@mixin Resto__margin {
+    margin-top: 5%;
+    margin-left: 15%;
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-right: 15%;
 }
-
 
 
