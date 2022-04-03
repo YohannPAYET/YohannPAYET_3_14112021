@@ -1,137 +1,184 @@
-/* Déclaration mixin : @include *mixin name* */
-
-@mixin Shrikhand {
-    font-family: 'Shrikhand', italic;
-}
-
-@mixin Roboto__bold {
-    font-family: 'Roboto', sans-serif;
-}
-
-@mixin a_vanilla {
-    text-decoration: none;
-    color: initial;
-}
-
-@mixin Center {
-    text-align: center;
-}
-
-@mixin Margin {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-@mixin Width {
-    width: 100%
-}
-
-@mixin Weight {
-    font-weight: bold;
-}
-
-@mixin Margin__tuto {
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-@mixin Icons__tuto {
-    color: $Octal;
-    padding-right: 15px;
-}
-
-@mixin Margin_footer {
-    padding: 3%;
-    padding-bottom: 4%;
-}
-
-@mixin Survol {
-    &:hover {
-        i {
-            color: $Primary;
-        }
-
-        background-color: rgba(147, 86, 220, 0.15);
-    }
-}
-
-@mixin Cover {
-    object-fit: cover;
-}
-
-@mixin Border__radius__top {
-    border-radius: 20px 20px 0 0;
-}
-
-@mixin Border__radius__bottom {
-    border-radius: 0 0 20px 20px;
-}
-
-@mixin Pastille {
-    position: absolute;
-    background-color: #9356DC;
-    color: #f6f6f6;
-    -webkit-transform: translate(-38px, 2px);
-    transform: translate(-40px, -5px);
-    border-radius: 50%;
-    margin: auto;
-    font-size: 10px;
+@mixin visual__global {
+    background-color: $Quinary;
+    border-radius: 10px;
     padding: 2%;
+    margin-top: 10%;
+    height: 70px;
+    width: 85%;
+    overflow: hidden;
+    display: flex;
 }
 
-@mixin Pastille__desktop {
-    position: absolute;
-    background-color: #9356DC;
-    color: #f6f6f6;
-    -webkit-transform: translate(-38px, 2px);
-    transform: translate(-45px, -5px);
-    border-radius: 50%;
-    margin: auto;
-    font-size: 10px;
-    padding: 10px;
-}
+@mixin hover__global {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
 
-@mixin Encoche {
-    transform: translate(-25px, 50px);
-    border: 1px solid transparent;
-    background-color: #99e2d0;
-    border-radius: 3px;
-    width: fit-content;
-    margin-left: auto;
-
-    p {
-        color: rgba(0, 135, 102, 255);
-        margin-top: 7px;
-        margin-bottom: 7px;
-        margin-left: 10px;
-        margin-right: 10px;
-        @include Weight;
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 59px;
+        }
     }
 }
 
-@mixin Encoche__desktop {
-    transform: translate(-40px, 50px);
-    border: 1px solid transparent;
-    background-color: #99e2d0;
-    border-radius: 3px;
-    width: fit-content;
-    margin-left: auto;
+@mixin hover__global-1 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
 
-    p {
-        color: rgba(0, 135, 102, 255);
-        margin-top: 7px;
-        margin-bottom: 7px;
-        margin-left: 10px;
-        margin-right: 10px;
-        @include Weight;
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 53px;
+        }
     }
 }
 
-@mixin Resto__margin {
-    margin-top: 5%;
-    margin-left: 15%;
-    padding-top: 2%;
-    margin-right: 15%;
+@mixin hover__global-2 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 49px;
+        }
+    }
 }
 
+@mixin hover__global-3 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
 
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 52px;
+        }
+    }
+}
+
+@mixin hover__global-4 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 55px;
+        }
+    }
+}
+
+@mixin hover__global-5 {
+    &:hover {
+        width: 70%;
+        transition: all 1s;
+        overflow: visible;
+        border-radius: 10px 0 0 10px;
+
+        .bloc__menu--entree-check {
+            position: relative;
+            transition: all 1s;
+            left: 51px;
+        }
+    }
+}
+
+@mixin margin__bloc {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+@mixin padding__bloc {
+    padding-left: 4%;
+}
+
+@mixin Margin__bottom {
+    margin-bottom: 4%;
+}
+
+@mixin global__responsive {
+    flex-direction: column;
+
+    .menu__title-2,
+    .menu__title-3 {
+        margin-top: 10%;
+    }
+
+    .bloc__menu-entree {
+        width: 100%;
+
+        .bloc__menu--entree-1,
+        .bloc__menu--entree-2,
+        .bloc__menu--entree-3 {
+            margin-top: 2%;
+            width: 100%;
+            height: 70px;
+
+            &:hover {
+                width: 75%;
+                .bloc__menu--entree-check {
+                    position: relative;
+                    transition: all 1s;
+                    /*left: 58px;*/
+                }
+            }
+        }
+    }
+
+    .bloc__menu-plat {
+        width: 100%;
+
+        .bloc__menu--plat-1,
+        .bloc__menu--plat-2,
+        .bloc__menu--plat-3 {
+            margin-top: 2%;
+            width: 100%;
+            height: 70px;
+
+            &:hover {
+                width: 75%;
+                .bloc__menu--entree-check {
+                    position: relative;
+                    transition: all 1s;
+                    
+        }
+    }}
+}
+
+    .bloc__menu-dessert {
+        width: 100%;
+
+        .bloc__menu--dessert-1,
+        .bloc__menu--dessert-2,
+        .bloc__menu--dessert-3 {
+            margin-top: 2%;
+            width: 100%;
+            height: 70px;
+
+            &:hover {
+                width: 75%;
+                .bloc__menu--entree-check {
+                    position: relative;
+                    transition: all 1s;
+                    }
+        }
+    }
+}
+}
