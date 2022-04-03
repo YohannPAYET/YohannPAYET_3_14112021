@@ -62,8 +62,8 @@ body {
     -webkit-transition: all 500ms linear;
     transition: all 500ms linear;
     opacity: 1;
-    -webkit-transform: translate(-2px, -86px);
-            transform: translate(-2px, -86px);
+    -webkit-transform: translate(-2px, -87px);
+            transform: translate(-2px, -87px);
   }
 }
 
@@ -146,7 +146,15 @@ a {
   font-weight: bold;
 }
 
-.tutorial__step1 {
+.slogan .slogan__subtitle {
+  margin-bottom: 5%;
+}
+
+.bloc__tutorial {
+  margin-top: 5%;
+}
+
+.bloc__tutorial .tutorial__step1 {
   -webkit-box-shadow: 5px 5px 10px -8px #000;
           box-shadow: 5px 5px 10px -8px #000;
   background: #f6f6f6;
@@ -160,15 +168,15 @@ a {
   text-decoration: none;
 }
 
-.tutorial__step1:hover {
+.bloc__tutorial .tutorial__step1:hover {
   background-color: rgba(147, 86, 220, 0.15);
 }
 
-.tutorial__step1:hover i {
+.bloc__tutorial .tutorial__step1:hover i {
   color: #9356DC;
 }
 
-.tutorial__step1 span {
+.bloc__tutorial .tutorial__step1 span {
   position: absolute;
   background-color: #9356DC;
   color: #f6f6f6;
@@ -180,7 +188,7 @@ a {
   padding: 10px;
 }
 
-.tutorial__step2 {
+.bloc__tutorial .tutorial__step2 {
   -webkit-box-shadow: 5px 5px 10px -8px #000;
           box-shadow: 5px 5px 10px -8px #000;
   background: #f6f6f6;
@@ -194,15 +202,15 @@ a {
   text-decoration: none;
 }
 
-.tutorial__step2:hover {
+.bloc__tutorial .tutorial__step2:hover {
   background-color: rgba(147, 86, 220, 0.15);
 }
 
-.tutorial__step2:hover i {
+.bloc__tutorial .tutorial__step2:hover i {
   color: #9356DC;
 }
 
-.tutorial__step2 span {
+.bloc__tutorial .tutorial__step2 span {
   position: absolute;
   background-color: #9356DC;
   color: #f6f6f6;
@@ -214,7 +222,7 @@ a {
   padding: 10px;
 }
 
-.tutorial__step3 {
+.bloc__tutorial .tutorial__step3 {
   -webkit-box-shadow: 5px 5px 10px -8px #000;
           box-shadow: 5px 5px 10px -8px #000;
   background: #f6f6f6;
@@ -228,15 +236,15 @@ a {
   text-decoration: none;
 }
 
-.tutorial__step3:hover {
+.bloc__tutorial .tutorial__step3:hover {
   background-color: rgba(147, 86, 220, 0.15);
 }
 
-.tutorial__step3:hover i {
+.bloc__tutorial .tutorial__step3:hover i {
   color: #9356DC;
 }
 
-.tutorial__step3 span {
+.bloc__tutorial .tutorial__step3 span {
   position: absolute;
   background-color: #9356DC;
   color: #f6f6f6;
@@ -267,8 +275,8 @@ a {
   line-height: 700px;
   opacity: 0.7;
   z-index: 1;
-  -webkit-animation: disappear 3s 2s forwards;
-          animation: disappear 3s 2s forwards;
+  -webkit-animation: disappear 2s 2s forwards;
+          animation: disappear 2s 2s forwards;
 }
 
 @-webkit-keyframes disappear {
@@ -279,8 +287,6 @@ a {
   100% {
     -webkit-transform: scale(0);
             transform: scale(0);
-    -webkit-transform-origin: 100% -100%;
-            transform-origin: 100% -100%;
   }
 }
 
@@ -292,8 +298,6 @@ a {
   100% {
     -webkit-transform: scale(0);
             transform: scale(0);
-    -webkit-transform-origin: 100% -100%;
-            transform-origin: 100% -100%;
   }
 }
 

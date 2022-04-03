@@ -1,3 +1,6 @@
+.bloc__tutorial{
+    margin-top: 5%;
+
 .tutorial__step1 {
 
     @include Survol;
@@ -27,6 +30,7 @@
     }
 
     @include Button__vanilla;
+}
 }
 
 .icons__specs {

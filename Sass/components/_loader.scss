@@ -12,7 +12,7 @@
     line-height: 700px;
     opacity: 0.7;
     z-index: 1;
-    animation: disappear 3s 2s forwards;
+    animation: disappear 2s 2s forwards;
 
 
 @keyframes disappear {
@@ -22,7 +22,6 @@
 
     100% {
         transform: scale(0);
-        transform-origin: 100% -100%;
     }
 }
 
