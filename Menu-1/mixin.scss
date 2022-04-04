@@ -136,7 +136,7 @@
                 .bloc__menu--entree-check {
                     position: relative;
                     transition: all 1s;
-                    left: 58px;
+                    /*left: 58px;*/
                 }
             }
         }
@@ -157,9 +157,10 @@
                 .bloc__menu--entree-check {
                     position: relative;
                     transition: all 1s;
-                    left: 58px;}
+                    
         }
     }}
+}
 
     .bloc__menu-dessert {
         width: 100%;
@@ -176,7 +177,7 @@
                 .bloc__menu--entree-check {
                     position: relative;
                     transition: all 1s;
-                    left: 58px;}
+                    }
         }
     }
 }

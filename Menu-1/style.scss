@@ -276,33 +276,35 @@ a {
 }
 
 @media only screen and (max-width: 1004px) {
-  .header__return{
+  .header__return {
     margin-left: 0;
+  }
+
+  .header__banner {
+    height: auto;
+  }
+
+  .__solid {
+    transform: translate(-3px, -113px);
+
+    &:hover {
+      transform: translate(-2px, -123px);
     }
-    
-.header__banner{
-  height: auto;
-}
+  }
 
-.__solid{
-  transform: translate(-3px, -113px);
-
-&:hover{
-  transform: translate(-2px, -123px);
-}}
-  
-.bloc__page{
-  height: 1000px;
-  margin-top: 50%;
-}
+  .bloc__page {
+    height: 1000px;
+    margin-top: 50%;
+  }
 
   .bloc__menu {
     @include global__responsive;
   }
 
-  .btn__command{
+  .btn__command {
     margin-left: 35%;
   }
+
   .bloc__footer {
     margin-top: 85rem;
   }

@@ -697,7 +697,7 @@ a {
     position: relative;
     -webkit-transition: all 1s;
     transition: all 1s;
-    left: 58px;
+    /*left: 58px;*/
   }
   .bloc__menu .bloc__menu-plat {
     width: 100%;
@@ -720,7 +720,6 @@ a {
     position: relative;
     -webkit-transition: all 1s;
     transition: all 1s;
-    left: 58px;
   }
   .bloc__menu .bloc__menu-dessert {
     width: 100%;
@@ -743,7 +742,6 @@ a {
     position: relative;
     -webkit-transition: all 1s;
     transition: all 1s;
-    left: 58px;
   }
   .btn__command {
     margin-left: 35%;
