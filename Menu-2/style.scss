@@ -36,7 +36,7 @@ a {
 }
 
 .btn__command {
-  margin-top: 9%;
+  margin-top: 15%;
   margin-left: 50%;
   @include Button__default;
 
@@ -135,67 +135,27 @@ a {
     margin-left: -5%;
   }
 
-  .bloc__menu--entree-1 {
-    @include visual__global;
-    @include hover__global-1;
-  }
-
-  .bloc__menu--entree-2 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu--entree-3 {
+  .bloc__menu--entree-1, .bloc__menu--entree-2,
+  .bloc__menu--entree-3,
+  .bloc__menu--entree-4,
+  .bloc__menu--plat-1,
+  .bloc__menu--plat-2,
+  .bloc__menu--plat-3,
+  .bloc__menu--dessert-1,
+  .bloc__menu--dessert-2,
+  .bloc__menu--dessert-3{
     @include visual__global;
     @include hover__global;
   }
 
-  .bloc__menu--entree-4 {
-    @include visual__global;
-    @include hover__global;
-
-    .bloc__menu--entree-check {
-      top: -10px;
-    }}
   .bloc__menu-plat {
     width: 33%;
     margin-left: -5%;
   }
 
-  .bloc__menu--plat-1 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu--plat-2 {
-    @include visual__global;
-    @include hover__global;
-
-  }
-
-  .bloc__menu--plat-3 {
-    @include visual__global;
-    @include hover__global-2;
-  }
-
   .bloc__menu-dessert {
     width: 33%;
     margin-left: -5%;
-  }
-
-  .bloc__menu--dessert-1 {
-    @include visual__global;
-    @include hover__global-3;
-  }
-
-  .bloc__menu--dessert-2 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu--dessert-3 {
-    @include visual__global;
-    @include hover__global;
   }
 }
 
@@ -213,7 +173,7 @@ a {
   cursor: pointer;
   box-shadow: 5px 5px 10px -8px $Septanary;
   position: relative;
-  left: 60px;
+  left: 59px;
   top: -9px;
   height: 70px;
   width: 50px;
@@ -232,7 +192,7 @@ a {
   animation: appear 3s 1 normal forwards;
   box-shadow: 5px 5px 10px -8px $Septanary;
 
-  $items: 4;
+  $items: 3;
 
   @for $i from 1 through $items {
     &:nth-child(#{$i}) {
@@ -279,8 +239,40 @@ a {
 }
 
 .bloc__footer {
-  @include Footer;
-  margin-top: 95%;
+  margin-top: 83rem;
 }
 
-// @media only screen and (min-width: 360px) and (max-width: 900px)
+@media only screen and (max-width: 1004px) {
+  .header__return {
+    margin-left: 0;
+  }
+
+  .header__banner {
+    height: auto;
+  }
+
+  .__solid {
+    transform: translate(-3px, -113px);
+
+    &:hover {
+      transform: translate(-2px, -123px);
+    }
+  }
+
+  .bloc__page {
+    height: 1000px;
+    margin-top: 50%;
+  }
+
+  .bloc__menu {
+    @include global__responsive;
+  }
+
+  .btn__command {
+    margin-left: 35%;
+  }
+
+  .bloc__footer {
+    margin-top: 85rem;
+  }
+}
