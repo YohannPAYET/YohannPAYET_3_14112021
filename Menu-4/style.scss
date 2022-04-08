@@ -36,7 +36,7 @@ a {
 }
 
 .btn__command {
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 50%;
   @include Button__default;
 
@@ -53,7 +53,7 @@ a {
   margin-top: 35%;
   position: absolute;
   background-color: $Quaternary;
-  height: 75%;
+  height: 85%;
   border-radius: 50px 50px 0 0;
 }
 
@@ -69,16 +69,16 @@ a {
 }
 
 .__solid {
-  transform: translate(-87px, -113px);
+  transform: translate(-7px, -113px);
 
   &:hover {
-    transform: translate(-87px, -123px);
+    transform: translate(-7px, -123px);
   }
 }
 
 .bloc__menu {
   display: flex;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 2%;
 
   p {
@@ -142,12 +142,12 @@ a {
 
   .bloc__menu--entree-2 {
     @include visual__global;
-    @include hover__global-2;
+    @include hover__global;
   }
 
   .bloc__menu--entree-3 {
     @include visual__global;
-    @include hover__global;
+    @include hover__global-1;
   }
 
   .bloc__menu-plat {
@@ -160,36 +160,36 @@ a {
     @include hover__global-2;
   }
 
-.bloc__menu--plat-2 {
-  @include visual__global;
-  @include hover__global;
+  .bloc__menu--plat-2 {
+    @include visual__global;
+    @include hover__global-3;
 
-}
+  }
 
-.bloc__menu--plat-3 {
-  @include visual__global;
-  @include hover__global;
-}
+  .bloc__menu--plat-3 {
+    @include visual__global;
+    @include hover__global;
+  }
 
-.bloc__menu-dessert {
-  width: 33%;
-  margin-left: -5%;
-}
+  .bloc__menu-dessert {
+    width: 33%;
+    margin-left: -5%;
+  }
 
-.bloc__menu--dessert-1 {
-  @include visual__global;
-  @include hover__global;
-}
+  .bloc__menu--dessert-1 {
+    @include visual__global;
+    @include hover__global;
+  }
 
-.bloc__menu--dessert-2 { 
-  @include visual__global;
-  @include hover__global;
-}
+  .bloc__menu--dessert-2 {
+    @include visual__global;
+    @include hover__global-4;
+  }
 
-.bloc__menu--dessert-3 { 
-  @include visual__global;
-  @include hover__global;
-}
+  .bloc__menu--dessert-3 {
+    @include visual__global;
+    @include hover__global-5;
+  }
 }
 
 .price {
@@ -272,8 +272,40 @@ a {
 }
 
 .bloc__footer {
-  @include Footer;
-  margin-top: 88%;
+  margin-top: 83rem;
 }
 
-// @media only screen and (min-width: 360px) and (max-width: 900px)
+@media only screen and (max-width: 1004px) {
+  .header__return {
+    margin-left: 0;
+  }
+
+  .header__banner {
+    height: auto;
+  }
+
+  .__solid {
+    transform: translate(-3px, -113px);
+
+    &:hover {
+      transform: translate(-2px, -123px);
+    }
+  }
+
+  .bloc__page {
+    height: 135vh;
+    margin-top: 50%;
+  }
+
+  .bloc__menu {
+    @include global__responsive;
+  }
+
+  .btn__command {
+    margin-left: 35%;
+  }
+
+  .bloc__footer {
+    margin-top: 87rem;
+  }
+}
