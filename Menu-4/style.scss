@@ -36,7 +36,7 @@ a {
 }
 
 .btn__command {
-  margin-top: 15%;
+  margin-top: 7%;
   margin-left: 50%;
   @include Button__default;
 
@@ -66,17 +66,19 @@ a {
 
 .fa-heart {
   margin-top: 30px;
+  transform: translate(-120px, -3px);
 }
 
 .__solid {
-  transform: translate(-7px, -113px);
+  transform: translate(94px, -55px);
 
   &:hover {
-    transform: translate(-7px, -123px);
+    transform: translate(94px, -65px);
   }
 }
 
 .bloc__menu {
+  max-width: 100%;
   display: flex;
   margin-left: 30px;
   margin-top: 2%;
@@ -130,66 +132,26 @@ a {
     }
   }
 
-  .bloc__menu-entree {
+  .bloc__menu-entree,
+  .bloc__menu-plat,
+  .bloc__menu-dessert{
     width: 33%;
     margin-left: -5%;
   }
 
-  .bloc__menu--entree-1 {
+  .bloc__menu-plat{
+    margin-left: -60px;
+  }
+
+  .bloc__menu-dessert{
+    margin-left: -92px;
+  }
+
+  .bloc__menu--item {
     @include visual__global;
     @include hover__global;
   }
 
-  .bloc__menu--entree-2 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu--entree-3 {
-    @include visual__global;
-    @include hover__global-1;
-  }
-
-  .bloc__menu-plat {
-    width: 33%;
-    margin-left: -5%;
-  }
-
-  .bloc__menu--plat-1 {
-    @include visual__global;
-    @include hover__global-2;
-  }
-
-  .bloc__menu--plat-2 {
-    @include visual__global;
-    @include hover__global-3;
-
-  }
-
-  .bloc__menu--plat-3 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu-dessert {
-    width: 33%;
-    margin-left: -5%;
-  }
-
-  .bloc__menu--dessert-1 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu--dessert-2 {
-    @include visual__global;
-    @include hover__global-4;
-  }
-
-  .bloc__menu--dessert-3 {
-    @include visual__global;
-    @include hover__global-5;
-  }
 }
 
 .price {
@@ -200,45 +162,9 @@ a {
   align-self: flex-end;
 }
 
-.bloc__menu--entree-check {
-  background-color: #99E2D0;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-  box-shadow: 5px 5px 10px -8px $Septanary;
-  position: relative;
-  left: 60px;
-  top: -9px;
-  height: 70px;
-  width: 50px;
-  place-items: center;
-  display: flex;
-  justify-content: center;
-}
-
 .fa-check-circle {
   color: $Quinary;
   font-size: 1.7rem;
-}
-
-
-.bloc__menu--item {
-  animation: appear 3s 1 normal forwards;
-  box-shadow: 5px 5px 10px -8px $Septanary;
-
-  $items: 3;
-
-  @for $i from 1 through $items {
-    &:nth-child(#{$i}) {
-      animation-delay: 200ms * $i;
-    }
-  }
-
-  &:hover {
-    .fa-check-circle {
-      animation: check__rotate 1s ease-in-out;
-      -webkit-animation: check__rotate 1s ease-in-out;
-    }
-  }
 }
 
 @keyframes appear {
@@ -253,59 +179,6 @@ a {
   }
 }
 
-@keyframes check__rotate {
-  0% {
-    transform: rotate(-270deg);
-    -webkit-transform: rotate(-270deg);
-    -moz-transform: rotate(-270deg);
-    -ms-transform: rotate(-270deg);
-    -o-transform: rotate(-270deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-  }
-}
-
 .bloc__footer {
-  margin-top: 83rem;
-}
-
-@media only screen and (max-width: 1004px) {
-  .header__return {
-    margin-left: 0;
-  }
-
-  .header__banner {
-    height: auto;
-  }
-
-  .__solid {
-    transform: translate(-3px, -113px);
-
-    &:hover {
-      transform: translate(-2px, -123px);
-    }
-  }
-
-  .bloc__page {
-    height: 135vh;
-    margin-top: 50%;
-  }
-
-  .bloc__menu {
-    @include global__responsive;
-  }
-
-  .btn__command {
-    margin-left: 35%;
-  }
-
-  .bloc__footer {
-    margin-top: 87rem;
-  }
+  margin-top: 83%;
 }

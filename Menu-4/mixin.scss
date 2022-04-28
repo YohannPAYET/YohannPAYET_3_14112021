@@ -7,7 +7,58 @@
     width: 85%;
     overflow: hidden;
     display: flex;
-}
+
+    .bloc__menu--entree-check {
+        background-color: #99E2D0;
+        border-radius: 0 10px 10px 0;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px -8px $Septanary;
+        position: relative;
+        left: 61px;
+        top: -11px;
+        height: 70px;
+        width: 50px;
+        place-items: center;
+        display: flex;
+        justify-content: center;
+      }
+  
+        animation: appear 3s 1 normal forwards;
+        box-shadow: 5px 5px 10px -8px $Septanary;
+  
+      $items: 3;
+  
+      @for $i from 1 through $items {
+        &:nth-child(#{$i}) {
+          animation-delay: 200ms * $i;
+        }
+      }
+  
+      &:hover {
+        .fa-check-circle {
+          animation: check__rotate 1s ease-in-out;
+          -webkit-animation: check__rotate 1s ease-in-out;
+        }
+      }
+
+    @keyframes check__rotate {
+        0% {
+          transform: rotate(-270deg);
+          -webkit-transform: rotate(-270deg);
+          -moz-transform: rotate(-270deg);
+          -ms-transform: rotate(-270deg);
+          -o-transform: rotate(-270deg);
+        }
+      
+        100% {
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+        }
+      }
+    }
 
 @mixin hover__global {
     &:hover {
@@ -19,82 +70,7 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 59px;
-        }
-    }
-}
-
-@mixin hover__global-1 {
-    &:hover {
-        width: 70%;
-        transition: all 1s;
-        overflow: visible;
-        border-radius: 10px 0 0 10px;
-
-        .bloc__menu--entree-check {
-            position: relative;
-            transition: all 1s;
-            left: 53px;
-        }
-    }
-}
-
-@mixin hover__global-2 {
-    &:hover {
-        width: 70%;
-        transition: all 1s;
-        overflow: visible;
-        border-radius: 10px 0 0 10px;
-
-        .bloc__menu--entree-check {
-            position: relative;
-            transition: all 1s;
-            left: 49px;
-        }
-    }
-}
-
-@mixin hover__global-3 {
-    &:hover {
-        width: 70%;
-        transition: all 1s;
-        overflow: visible;
-        border-radius: 10px 0 0 10px;
-
-        .bloc__menu--entree-check {
-            position: relative;
-            transition: all 1s;
-            left: 52px;
-        }
-    }
-}
-
-@mixin hover__global-4 {
-    &:hover {
-        width: 70%;
-        transition: all 1s;
-        overflow: visible;
-        border-radius: 10px 0 0 10px;
-
-        .bloc__menu--entree-check {
-            position: relative;
-            transition: all 1s;
-            left: 55px;
-        }
-    }
-}
-
-@mixin hover__global-5 {
-    &:hover {
-        width: 70%;
-        transition: all 1s;
-        overflow: visible;
-        border-radius: 10px 0 0 10px;
-
-        .bloc__menu--entree-check {
-            position: relative;
-            transition: all 1s;
-            left: 51px;
+            left: 58px;
         }
     }
 }
@@ -121,18 +97,14 @@
         margin-top: 10%;
     }
 
-    .bloc__menu-entree {
-        width: 100%;
-
-        .bloc__menu--entree-1,
-        .bloc__menu--entree-2,
-        .bloc__menu--entree-3 {
+        .bloc__menu--item {
             margin-top: 2%;
             width: 100%;
             height: 70px;
 
             &:hover {
                 width: 75%;
+
                 .bloc__menu--entree-check {
                     position: relative;
                     transition: all 1s;
@@ -141,44 +113,3 @@
             }
         }
     }
-
-    .bloc__menu-plat {
-        width: 100%;
-
-        .bloc__menu--plat-1,
-        .bloc__menu--plat-2,
-        .bloc__menu--plat-3 {
-            margin-top: 2%;
-            width: 100%;
-            height: 70px;
-
-            &:hover {
-                width: 75%;
-                .bloc__menu--entree-check {
-                    position: relative;
-                    transition: all 1s;
-                    
-        }
-    }}
-}
-
-    .bloc__menu-dessert {
-        width: 100%;
-
-        .bloc__menu--dessert-1,
-        .bloc__menu--dessert-2,
-        .bloc__menu--dessert-3 {
-            margin-top: 2%;
-            width: 100%;
-            height: 70px;
-
-            &:hover {
-                width: 75%;
-                .bloc__menu--entree-check {
-                    position: relative;
-                    transition: all 1s;
-                    }
-        }
-    }
-}
-}

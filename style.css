@@ -146,10 +146,6 @@ a {
   font-weight: bold;
 }
 
-.slogan .slogan__subtitle {
-  margin-bottom: 5%;
-}
-
 .bloc__tutorial {
   margin-top: 5%;
 }
@@ -485,45 +481,5 @@ a {
   margin-left: 10px;
   margin-right: 10px;
   font-weight: bold;
-}
-
-@media only screen and (min-width: 1005px) and (max-width: 1200px) {
-  .bloc__resto {
-    width: 100%;
-    margin: 0;
-    margin-top: 5%;
-  }
-}
-
-@media only screen and (min-width: 100px) and (max-width: 1004px) {
-  .bloc__tutorial {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 3%;
-  }
-  .bloc__tutorial .tutorial__step1 {
-    margin-top: 5%;
-  }
-  .bloc__tutorial .tutorial__step1, .bloc__tutorial .tutorial__step2 {
-    margin-bottom: 10%;
-  }
-  .bloc__resto {
-    margin: 0;
-    padding: 0;
-    margin-top: 10%;
-  }
-  .bloc__resto .flex__container-1,
-  .bloc__resto .flex__container-2 {
-    margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .bloc__resto img {
-    width: 100%;
-  }
 }
 /*# sourceMappingURL=style.css.map */

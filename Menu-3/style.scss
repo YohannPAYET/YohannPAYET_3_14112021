@@ -36,7 +36,7 @@ a {
 }
 
 .btn__command {
-  margin-top: 15%;
+  margin-top: 7%;
   margin-left: 50%;
   @include Button__default;
 
@@ -130,65 +130,24 @@ a {
     }
   }
 
-  .bloc__menu-entree {
+  .bloc__menu-entree,
+  .bloc__menu-plat,
+  .bloc__menu-dessert{
     width: 33%;
     margin-left: -5%;
   }
 
-  .bloc__menu--entree-1 {
+  .bloc__menu-plat{
+    margin-left: -60px;
+  }
+
+  .bloc__menu-dessert{
+    margin-left: -92px;
+  }
+
+  .bloc__menu--item {
     @include visual__global;
     @include hover__global;
-  }
-
-  .bloc__menu--entree-2 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu--entree-3 {
-    @include visual__global;
-    @include hover__global-1;
-  }
-
-  .bloc__menu-plat {
-    width: 33%;
-    margin-left: -5%;
-  }
-
-  .bloc__menu--plat-1 {
-    @include visual__global;
-    @include hover__global-2;
-  }
-
-  .bloc__menu--plat-2 {
-    @include visual__global;
-    @include hover__global-3;
-
-  }
-
-  .bloc__menu--plat-3 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu-dessert {
-    width: 33%;
-    margin-left: -5%;
-  }
-
-  .bloc__menu--dessert-1 {
-    @include visual__global;
-    @include hover__global;
-  }
-
-  .bloc__menu--dessert-2 {
-    @include visual__global;
-    @include hover__global-4;
-  }
-
-  .bloc__menu--dessert-3 {
-    @include visual__global;
-    @include hover__global-5;
   }
 }
 
@@ -273,39 +232,4 @@ a {
 
 .bloc__footer {
   margin-top: 83rem;
-}
-
-@media only screen and (max-width: 1004px) {
-  .header__return {
-    margin-left: 0;
-  }
-
-  .header__banner {
-    height: auto;
-  }
-
-  .__solid {
-    transform: translate(-3px, -113px);
-
-    &:hover {
-      transform: translate(-2px, -123px);
-    }
-  }
-
-  .bloc__page {
-    height: 135vh;
-    margin-top: 50%;
-  }
-
-  .bloc__menu {
-    @include global__responsive;
-  }
-
-  .btn__command {
-    margin-left: 35%;
-  }
-
-  .bloc__footer {
-    margin-top: 85rem;
-  }
 }
