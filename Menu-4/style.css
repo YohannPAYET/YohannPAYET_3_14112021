@@ -160,7 +160,7 @@ a {
   margin-top: 35%;
   position: absolute;
   background-color: #eaeaea;
-  height: 85%;
+  height: 95%;
   border-radius: 50px 50px 0 0;
 }
 
@@ -173,18 +173,16 @@ a {
 
 .fa-heart {
   margin-top: 30px;
-  -webkit-transform: translate(-120px, -3px);
-          transform: translate(-120px, -3px);
 }
 
 .__solid {
-  -webkit-transform: translate(94px, -55px);
-          transform: translate(94px, -55px);
+  -webkit-transform: translate(-7px, -113px);
+          transform: translate(-7px, -113px);
 }
 
 .__solid:hover {
-  -webkit-transform: translate(94px, -65px);
-          transform: translate(94px, -65px);
+  -webkit-transform: translate(-7px, -123px);
+          transform: translate(-7px, -123px);
 }
 
 .bloc__menu {
@@ -297,9 +295,9 @@ a {
           box-shadow: 5px 5px 10px -8px #000;
   position: relative;
   left: 61px;
-  top: -11px;
+  top: -9.5px;
   height: 70px;
-  width: 50px;
+  min-width: 50px;
   place-items: center;
   display: -webkit-box;
   display: -ms-flexbox;

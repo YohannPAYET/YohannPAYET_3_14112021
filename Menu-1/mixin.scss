@@ -15,9 +15,9 @@
         box-shadow: 5px 5px 10px -8px $Septanary;
         position: relative;
         left: 61px;
-        top: -11px;
+        top: -9.5px;
         height: 70px;
-        width: 50px;
+        min-width: 50px;
         place-items: center;
         display: flex;
         justify-content: center;
@@ -108,7 +108,6 @@
                 .bloc__menu--entree-check {
                     position: relative;
                     transition: all 1s;
-                    /*left: 58px;*/
                 }
             }
         }

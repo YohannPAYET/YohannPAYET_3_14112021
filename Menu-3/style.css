@@ -160,7 +160,7 @@ a {
   margin-top: 35%;
   position: absolute;
   background-color: #eaeaea;
-  height: 85%;
+  height: 95%;
   border-radius: 50px 50px 0 0;
 }
 
@@ -186,6 +186,7 @@ a {
 }
 
 .bloc__menu {
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,9 +295,9 @@ a {
           box-shadow: 5px 5px 10px -8px #000;
   position: relative;
   left: 61px;
-  top: -11px;
+  top: -9.5px;
   height: 70px;
-  width: 50px;
+  min-width: 50px;
   place-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,56 +385,9 @@ a {
       align-self: flex-end;
 }
 
-.bloc__menu--entree-check {
-  background-color: #99E2D0;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-  -webkit-box-shadow: 5px 5px 10px -8px #000;
-          box-shadow: 5px 5px 10px -8px #000;
-  position: relative;
-  left: 60px;
-  top: -9px;
-  height: 70px;
-  width: 50px;
-  place-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .fa-check-circle {
   color: #f6f6f6;
   font-size: 1.7rem;
-}
-
-.bloc__menu--item {
-  -webkit-animation: appear 3s 1 normal forwards;
-          animation: appear 3s 1 normal forwards;
-  -webkit-box-shadow: 5px 5px 10px -8px #000;
-          box-shadow: 5px 5px 10px -8px #000;
-}
-
-.bloc__menu--item:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.bloc__menu--item:nth-child(2) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.bloc__menu--item:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
-.bloc__menu--item:hover .fa-check-circle {
-  animation: check__rotate 1s ease-in-out;
-  -webkit-animation: check__rotate 1s ease-in-out;
 }
 
 @-webkit-keyframes appear {
@@ -462,24 +416,7 @@ a {
   }
 }
 
-@keyframes check__rotate {
-  0% {
-    transform: rotate(-270deg);
-    -webkit-transform: rotate(-270deg);
-    -moz-transform: rotate(-270deg);
-    -ms-transform: rotate(-270deg);
-    -o-transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-  }
-}
-
 .bloc__footer {
-  margin-top: 83rem;
+  margin-top: 83%;
 }
 /*# sourceMappingURL=style.css.map */
