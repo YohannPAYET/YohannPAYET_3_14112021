@@ -481,4 +481,69 @@ a {
   margin-right: 10px;
   font-weight: bold;
 }
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .slogan__subtitle {
+    margin-bottom: 7%;
+  }
+  .bloc__tutorial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3%;
+  }
+  .bloc__tutorial .tutorial__step1 {
+    margin-top: 2%;
+  }
+  .bloc__tutorial .tutorial__step1,
+  .bloc__tutorial .tutorial__step2,
+  .bloc__tutorial .tutorial__step3 {
+    margin-bottom: 2%;
+  }
+  .bloc__resto {
+    margin-left: 0;
+    width: 100%;
+  }
+  .bloc__resto img {
+    width: 100%;
+  }
+  .flex__container-1,
+  .flex__container-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 768px) and (max-width: 1205px) {
+  .bloc__tutorial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3%;
+  }
+  .bloc__tutorial .tutorial__step1 {
+    margin-top: 2%;
+  }
+  .bloc__tutorial .tutorial__step1,
+  .bloc__tutorial .tutorial__step2,
+  .bloc__tutorial .tutorial__step3 {
+    margin-bottom: 2%;
+  }
+  .bloc__resto {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
