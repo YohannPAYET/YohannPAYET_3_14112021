@@ -521,7 +521,7 @@ a {
   }
 }
 
-/* Extra big screen devices (1200px and above) */
+/* Medium screen devices (768px and above) */
 @media only screen and (min-width: 768px) and (max-width: 1205px) {
   .bloc__tutorial {
     display: -webkit-box;

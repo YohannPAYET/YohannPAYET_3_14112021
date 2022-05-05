@@ -123,7 +123,7 @@ a {
   height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
+  position: relative;
 }
 
 .btn__command {
@@ -157,11 +157,11 @@ a {
 
 .bloc__page {
   width: 100%;
-  margin-top: 35%;
   position: absolute;
   background-color: #eaeaea;
-  height: 95%;
   border-radius: 50px 50px 0 0;
+  top: 38em;
+  height: 47em;
 }
 
 .bloc__page-title {
@@ -293,10 +293,9 @@ a {
   cursor: pointer;
   -webkit-box-shadow: 5px 5px 10px -8px #000;
           box-shadow: 5px 5px 10px -8px #000;
-  position: relative;
-  left: 61px;
-  top: -9.5px;
-  height: 70px;
+  -webkit-transform: translate(60px, -10px);
+          transform: translate(60px, -10px);
+  min-height: 70px;
   min-width: 50px;
   place-items: center;
   display: -webkit-box;
@@ -373,7 +372,8 @@ a {
   position: relative;
   -webkit-transition: all 1s;
   transition: all 1s;
-  left: 58px;
+  -webkit-transform: translate(58px, -9px);
+          transform: translate(58px, -9px);
 }
 
 .price {
@@ -417,19 +417,61 @@ a {
 }
 
 .bloc__footer {
-  margin-top: 83%;
+  position: absolute;
+  width: 100%;
+  top: 85rem;
 }
 
 /* For extremely small screen devices (595px and below) */
-@media only screen and (max-width: 595px) {
-  .bloc__tutorial {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .header__return {
+    margin-left: 0;
+  }
+  .__solid {
+    -webkit-transform: translate(-2px, -113px);
+            transform: translate(-2px, -113px);
+  }
+  .__solid:hover {
+    -webkit-transform: translate(-2px, -123px);
+            transform: translate(-2px, -123px);
+  }
+  .bloc__page {
+    top: 33%;
+    height: 80em;
+  }
+  .bloc__menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0;
+  }
+  .bloc__menu .menu__title-2,
+  .bloc__menu .menu__title-3 {
+    margin-top: 10%;
+  }
+  .bloc__menu .bloc__menu-entree,
+  .bloc__menu .bloc__menu-plat,
+  .bloc__menu .bloc__menu-dessert {
+    width: 100%;
+    margin: 0;
+  }
+  .bloc__menu .bloc__menu--item {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .bloc__menu .bloc__menu--item:hover .bloc__menu--entree-check {
+    -webkit-transform: translate(58px, -10px);
+            transform: translate(58px, -10px);
+  }
+  .btn__command {
+    margin-left: 35%;
+    margin-bottom: 10%;
+  }
+  .bloc__footer {
+    position: absolute;
+    margin-top: 8rem;
+    width: 100%;
   }
 }
 

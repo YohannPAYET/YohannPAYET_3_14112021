@@ -13,10 +13,8 @@
         border-radius: 0 10px 10px 0;
         cursor: pointer;
         box-shadow: 5px 5px 10px -8px $Septanary;
-        position: relative;
-        left: 61px;
-        top: -9.5px;
-        height: 70px;
+        transform: translate(60px, -10px);
+        min-height: 70px;
         min-width: 50px;
         place-items: center;
         display: flex;
@@ -70,7 +68,7 @@
         .bloc__menu--entree-check {
             position: relative;
             transition: all 1s;
-            left: 58px;
+            transform: translate(58px, -9px);
         }
     }
 }
