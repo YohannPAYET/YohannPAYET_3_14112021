@@ -26,8 +26,7 @@ a {
   @include Shrikhand;
 }
 
-.header__banner{
-  margin-top: 3%;
+.header__banner {
   width: 100%;
   margin-top: 0;
   height: 80%;
@@ -35,26 +34,12 @@ a {
   position: relative;
 }
 
-.btn__command {
-  margin-top: 7%;
-  margin-left: 50%;
-  @include Button__default;
-
-  &:hover {
-    background: linear-gradient(to bottom, $Primary 5%, $Secondary 100%);
-    box-shadow: 8px 8px 12px -10px $Septanary;
-    background-color: $Primary;
-    opacity: 0.7;
-  }
-}
-
 .bloc__page {
   width: 100%;
   position: absolute;
   background-color: $Quaternary;
   border-radius: 50px 50px 0 0;
-  top: 38em;
-  height: 47em;
+  margin-top: -20%;
 }
 
 .bloc__page-title {
@@ -133,16 +118,16 @@ a {
 
   .bloc__menu-entree,
   .bloc__menu-plat,
-  .bloc__menu-dessert{
+  .bloc__menu-dessert {
     width: 33%;
     margin-left: -5%;
   }
 
-  .bloc__menu-plat{
+  .bloc__menu-plat {
     margin-left: -60px;
   }
 
-  .bloc__menu-dessert{
+  .bloc__menu-dessert {
     margin-left: -92px;
   }
 
@@ -178,79 +163,105 @@ a {
   }
 }
 
-.bloc__footer {
-  position: absolute;
-  width: 100%;
-  top: 85rem;
-}
+.btn__command {
+  margin-top: 6%;
+  margin-left: 50%;
+  margin-bottom: 10%;
+  @include Button__default;
 
+  &:hover {
+    background: linear-gradient(to bottom, $Primary 5%, $Secondary 100%);
+    box-shadow: 8px 8px 12px -10px $Septanary;
+    background-color: $Primary;
+    opacity: 0.7;
+  }
+}
 
 /* For extremely small screen devices (595px and below) */
-@media screen and (min-width: 500px) and (max-width: 768px){
+@media screen and (min-width: 500px) and (max-width: 768px) {
   .header__return {
     margin-left: 0;
-}
-
-.__solid{
-  transform: translate(-2px, -113px);
-  &:hover{
-    transform: translate(-2px, -123px);
-  }
-}
-
-.bloc__page{
-  top: 33%;
-  height: 80em;
-}
-
-.bloc__menu{
-  flex-direction: column;
-  margin: 0;
-
-  .menu__title-2,
-  .menu__title-3{
-    margin-top: 10%;
   }
 
-  .bloc__menu-entree,
-  .bloc__menu-plat,
-  .bloc__menu-dessert{ 
-    width: 100%;
-    margin: 0;
-  }
+  .__solid {
+    transform: translate(-2px, -113px);
 
-  .bloc__menu--item{
-    width: 100%;
-    margin-top: 5%;
-
-    &:hover{
-
-    .bloc__menu--entree-check{
-        transform: translate(58px, -10px);
+    &:hover {
+      transform: translate(-2px, -123px);
     }
-  } }
+  }
 
-}
+  .bloc__page {
+    top: 20em;
+    margin-top: 0;
+  }
 
-.btn__command{
-  margin-left: 35%;
-  margin-bottom: 10%;
-}
+  .bloc__menu {
+    flex-direction: column;
+    margin: 0;
 
-.bloc__footer{
-  position: absolute;
-  margin-top: 8rem;
-  width: 100%;
-}
+    .menu__title-2,
+    .menu__title-3 {
+      margin-top: 10%;
+    }
+
+    .bloc__menu-entree,
+    .bloc__menu-plat,
+    .bloc__menu-dessert {
+      width: 100%;
+      margin: 0;
+    }
+
+    .bloc__menu--item {
+      width: 100%;
+      margin-top: 5%;
+      padding: 10px;
+
+      &:hover {
+
+        .bloc__menu--entree-check {
+          transform: translate(58px, -10px);
+        }
+      }
+    }
+
+  }
+
+  .btn__command {
+    margin-left: 40%;
+    margin-bottom: 10%;
+  }
 
 }
 
 /* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px){
+@media screen and (min-width: 501px) {
+  .__solid {
+    transform: translate(-7px, -113px);
 
+    &:hover {
+      transform: translate(-7px, -123px);
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .bloc__menu {
+    .bloc__menu-entree {
+      margin-left: -10%;
+      margin-top: 3%;
+    }
+
+    .bloc__menu-plat,
+    .bloc__menu-dessert {
+      margin-top: 3%;
+    }
+  }
+
+  .btn__command {
+    margin-left: 45%;
+  }
 }
 
 /* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px){
-
-}
+@media screen and (min-width: 1200px) {}
