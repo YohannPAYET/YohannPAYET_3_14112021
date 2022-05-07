@@ -69,7 +69,8 @@ body {
 
 .bloc__footer {
   background-color: #353535;
-  padding: 3%;
+  padding: 1%;
+  top: 87rem;
 }
 
 .bloc__footer a {

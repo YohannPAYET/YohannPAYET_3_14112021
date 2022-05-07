@@ -76,9 +76,9 @@
 }
 
 /* For extremely small screen devices (595px and below) */
-@media only screen and (min-width: 500px) and (max-width: 768px){
+@media only screen and (min-width: 500px) and (max-width: 768px) {
 
-    .slogan__subtitle{
+    .slogan__subtitle {
         margin-bottom: 7%;
     }
 
@@ -87,13 +87,13 @@
         flex-direction: column;
         margin: 3%;
 
-        .tutorial__step1{
+        .tutorial__step1 {
             margin-top: 2%;
         }
 
         .tutorial__step1,
         .tutorial__step2,
-        .tutorial__step3{
+        .tutorial__step3 {
             margin-bottom: 2%;
         }
     }
@@ -122,19 +122,19 @@
         flex-direction: column;
         margin: 3%;
 
-        .tutorial__step1{
+        .tutorial__step1 {
             margin-top: 2%;
         }
 
         .tutorial__step1,
         .tutorial__step2,
-        .tutorial__step3{
+        .tutorial__step3 {
             margin-bottom: 2%;
         }
     }
-    
+
     .bloc__resto {
-    margin-left: 0;
-    width: 100%;
-}
+        margin-left: 0;
+        width: 100%;
+    }
 }
