@@ -29,7 +29,7 @@ a {
 .header__banner {
   width: 100%;
   margin-top: 0;
-  height: 80%;
+  max-height: 500px;
   object-fit: cover;
   position: relative;
 }
@@ -39,7 +39,7 @@ a {
   position: absolute;
   background-color: $Quaternary;
   border-radius: 50px 50px 0 0;
-  margin-top: -20%;
+  margin-top: -50px;
 }
 
 .bloc__page-title {
@@ -245,20 +245,20 @@ a {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px){
-  .bloc__menu{
-  .bloc__menu-entree{
-    margin-left: -10%;
-    margin-top: 3%;
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .bloc__menu {
+    .bloc__menu-entree {
+      margin-left: -10%;
+      margin-top: 3%;
     }
 
     .bloc__menu-plat,
-    .bloc__menu-dessert{
+    .bloc__menu-dessert {
       margin-top: 3%;
     }
   }
 
-  .btn__command{
+  .btn__command {
     margin-left: 45%;
   }
 }
