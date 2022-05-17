@@ -21,14 +21,14 @@
     justify-content: center;
   }
 
-  animation: appear 3s 1 normal forwards;
+  animation: appear 0.5s ease-in-out reverse both;
   box-shadow: 5px 5px 10px -8px $Septanary;
 
   $items: 4;
 
   @for $i from 1 through $items {
     &:nth-child(#{$i}) {
-      animation-delay: 200ms * $i;
+      animation-delay: 400ms * $i;
     }
   }
 

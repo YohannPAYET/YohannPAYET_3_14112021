@@ -251,8 +251,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: appear 3s 1 normal forwards;
-          animation: appear 3s 1 normal forwards;
+  animation: appear 0.5s ease-in-out reverse both;
   -webkit-box-shadow: 5px 5px 10px -8px #000;
           box-shadow: 5px 5px 10px -8px #000;
 }
@@ -277,23 +276,23 @@ a {
 }
 
 .bloc__menu .bloc__menu--item:nth-child(1) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.bloc__menu .bloc__menu--item:nth-child(2) {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 
+.bloc__menu .bloc__menu--item:nth-child(2) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
 .bloc__menu .bloc__menu--item:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 
 .bloc__menu .bloc__menu--item:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
 }
 
 .bloc__menu .bloc__menu--item:hover .fa-check-circle {
@@ -367,27 +366,27 @@ a {
 
 @-webkit-keyframes appear {
   0% {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    opacity: 0;
-  }
-  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
   }
 }
 
 @keyframes appear {
   0% {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    opacity: 0;
-  }
-  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
   }
 }
 
