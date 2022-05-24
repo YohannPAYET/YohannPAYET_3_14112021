@@ -75,7 +75,48 @@
     @include Encoche__desktop;
 }
 
-/* For extremely small screen devices (595px and below) */
+@media only screen and (min-width: 280px) and (max-width: 499px) {
+
+    .slogan__subtitle {
+        margin-bottom: 7%;
+    }
+
+    .btn{
+        margin-left: -2%;
+    }
+
+    .bloc__tutorial {
+        display: flex;
+        flex-direction: column;
+        margin: 10%;
+
+        .tutorial__step1 {
+            margin-top: 2%;
+        }
+
+        .tutorial__step1,
+        .tutorial__step2,
+        .tutorial__step3 {
+            margin-bottom: 2%;
+        }
+    }
+
+    .bloc__resto {
+        margin-left: 0;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .flex__container-1,
+    .flex__container-2 {
+        flex-direction: column;
+    }
+
+}
+
 @media only screen and (min-width: 500px) and (max-width: 768px) {
 
     .slogan__subtitle {

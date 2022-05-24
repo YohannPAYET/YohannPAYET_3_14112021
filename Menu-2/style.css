@@ -420,7 +420,50 @@ a {
   opacity: 0.7;
 }
 
-/* For extremely small screen devices (595px and below) */
+@media screen and (min-width: 280px) and (max-width: 499px) {
+  .header__return {
+    margin-left: 0;
+  }
+  .__solid {
+    -webkit-transform: translate(-2px, -113px);
+            transform: translate(-2px, -113px);
+  }
+  .__solid:hover {
+    -webkit-transform: translate(-2px, -123px);
+            transform: translate(-2px, -123px);
+  }
+  .bloc__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .bloc__menu .menu__title-2,
+  .bloc__menu .menu__title-3 {
+    margin-top: 10%;
+  }
+  .bloc__menu .bloc__menu-entree,
+  .bloc__menu .bloc__menu-plat,
+  .bloc__menu .bloc__menu-dessert {
+    width: 100%;
+    margin: 0;
+  }
+  .bloc__menu .bloc__menu--item {
+    width: 100%;
+    margin-top: 5%;
+    padding: 10px;
+  }
+  .bloc__menu .bloc__menu--item:hover .bloc__menu--entree-check {
+    -webkit-transform: translate(58px, -10px);
+            transform: translate(58px, -10px);
+  }
+  .btn__command {
+    margin-left: 28%;
+    margin-bottom: 10%;
+  }
+}
+
 @media screen and (min-width: 500px) and (max-width: 768px) {
   .header__return {
     margin-left: 0;
@@ -469,7 +512,6 @@ a {
   }
 }
 
-/* Medium screen devices (768px and above) */
 @media screen and (min-width: 501px) {
   .__solid {
     -webkit-transform: translate(-7px, -113px);
