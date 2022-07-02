@@ -312,5 +312,18 @@ a {
   }
 }
 
-/* Extra big screen devices (1200px and above) */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1363px) {
+  .bloc__page-title{
+    margin-top: 0;
+  }
+  .fa-heart{
+    transform: translate(-170px, -5px);
+  }
+  .__solid {
+    transform: translate(0px, -60px);
+
+    &:hover {
+      transform: translate(0px, -70px);
+    }
+  }
+}
