@@ -21,14 +21,30 @@
     justify-content: center;
   }
 
-  animation: appear 0.5s ease-in-out reverse both;
-  box-shadow: 5px 5px 10px -8px $Septanary;
-
-  $items: 3;
-
-  @for $i from 1 through $items {
-    &:nth-child(#{$i}) {
-      animation-delay: 400ms * $i;
+  @keyframes slide-bottom {
+    0% {
+      transform: translateY(-100);
+      opacity: 0;
+    }
+    
+    25% {
+      transform: translateY(-75px);
+      opacity: 0;
+    }
+    
+     50% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    
+     75% {
+      transform: translateY(-25px);
+      opacity: 0;
+    }
+    
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
     }
   }
 

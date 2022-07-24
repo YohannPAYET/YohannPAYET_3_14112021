@@ -131,6 +131,56 @@ a {
     margin-left: -92px;
   }
 
+  .bloc__menu-entree {
+    .bloc__menu--entree-1 {
+      animation: slide-bottom 1s linear both;
+    }
+
+    .bloc__menu--entree-2 {
+      animation: slide-bottom 2s linear both;
+    }
+
+    .bloc__menu--entree-3 {
+      animation: slide-bottom 3s linear both;
+    }
+
+    .bloc__menu--entree-4 {
+      animation: slide-bottom 4s linear both;
+    }
+  }
+
+  .bloc__menu-plat {
+    margin-left: -60px;
+
+    .bloc__menu--plat-1 {
+      animation: slide-bottom 5s linear both;
+    }
+
+    .bloc__menu--plat-2 {
+      animation: slide-bottom 6s linear both;
+    }
+
+    .bloc__menu--plat-3 {
+      animation: slide-bottom 7s linear both;
+    }
+  }
+
+  .bloc__menu-dessert {
+    margin-left: -92px;
+
+    .bloc__menu--dessert-1 {
+      animation: slide-bottom 8s linear both;
+    }
+
+    .bloc__menu--dessert-2 {
+      animation: slide-bottom 9s linear both;
+    }
+
+    .bloc__menu--dessert-3 {
+      animation: slide-bottom 10s linear both;
+    }
+  }
+
   .bloc__menu--item {
     @include visual__global;
     @include hover__global;
@@ -149,17 +199,6 @@ a {
 .fa-check-circle {
   color: $Quinary;
   font-size: 1.7rem;
-}
-
-@keyframes appear {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
 }
 
 .btn__command {

@@ -41,7 +41,6 @@ body {
     margin-left: 85%;
     cursor: pointer;
   }
-
   .__solid {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
@@ -200,11 +199,47 @@ a {
   width: 33%;
   margin-left: -5%;
 }
+.bloc__menu .bloc__menu-entree .bloc__menu--entree-1 {
+  -webkit-animation: slide-bottom 1s linear both;
+          animation: slide-bottom 1s linear both;
+}
+.bloc__menu .bloc__menu-entree .bloc__menu--entree-2 {
+  -webkit-animation: slide-bottom 2s linear both;
+          animation: slide-bottom 2s linear both;
+}
+.bloc__menu .bloc__menu-entree .bloc__menu--entree-3 {
+  -webkit-animation: slide-bottom 3s linear both;
+          animation: slide-bottom 3s linear both;
+}
 .bloc__menu .bloc__menu-plat {
   margin-left: -60px;
 }
+.bloc__menu .bloc__menu-plat .bloc__menu--plat-1 {
+  -webkit-animation: slide-bottom 4s linear both;
+          animation: slide-bottom 4s linear both;
+}
+.bloc__menu .bloc__menu-plat .bloc__menu--plat-2 {
+  -webkit-animation: slide-bottom 5s linear both;
+          animation: slide-bottom 5s linear both;
+}
+.bloc__menu .bloc__menu-plat .bloc__menu--plat-3 {
+  -webkit-animation: slide-bottom 6s linear both;
+          animation: slide-bottom 6s linear both;
+}
 .bloc__menu .bloc__menu-dessert {
   margin-left: -92px;
+}
+.bloc__menu .bloc__menu-dessert .bloc__menu--dessert-1 {
+  -webkit-animation: slide-bottom 7s linear both;
+          animation: slide-bottom 7s linear both;
+}
+.bloc__menu .bloc__menu-dessert .bloc__menu--dessert-2 {
+  -webkit-animation: slide-bottom 8s linear both;
+          animation: slide-bottom 8s linear both;
+}
+.bloc__menu .bloc__menu-dessert .bloc__menu--dessert-3 {
+  -webkit-animation: slide-bottom 9s linear both;
+          animation: slide-bottom 9s linear both;
 }
 .bloc__menu .bloc__menu--item {
   background-color: #f6f6f6;
@@ -215,8 +250,6 @@ a {
   width: 85%;
   overflow: hidden;
   display: flex;
-  animation: appear 0.5s ease-in-out reverse both;
-  box-shadow: 5px 5px 10px -8px #000;
 }
 .bloc__menu .bloc__menu--item .bloc__menu--entree-check {
   background-color: #99E2D0;
@@ -230,17 +263,49 @@ a {
   display: flex;
   justify-content: center;
 }
-.bloc__menu .bloc__menu--item:nth-child(1) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+@-webkit-keyframes slide-bottom {
+  0% {
+    transform: translateY(-100);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(-75px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
-.bloc__menu .bloc__menu--item:nth-child(2) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-.bloc__menu .bloc__menu--item:nth-child(3) {
-  -webkit-animation-delay: 1200ms;
-          animation-delay: 1200ms;
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(-75px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .bloc__menu .bloc__menu--item:hover .fa-check-circle {
   animation: check__rotate 1s ease-in-out;
@@ -304,27 +369,6 @@ a {
   font-size: 1.7rem;
 }
 
-@-webkit-keyframes appear {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-}
-
-@keyframes appear {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-}
 .btn__command {
   margin-top: 6%;
   margin-left: 50%;
@@ -354,14 +398,12 @@ a {
   .header__return {
     margin-left: 0;
   }
-
   .__solid {
     transform: translate(-2px, -113px);
   }
   .__solid:hover {
     transform: translate(-2px, -123px);
   }
-
   .bloc__menu {
     flex-direction: column;
     margin: 0;
@@ -384,7 +426,6 @@ a {
   .bloc__menu .bloc__menu--item:hover .bloc__menu--entree-check {
     transform: translate(58px, -10px);
   }
-
   .btn__command {
     margin-left: 28%;
     margin-bottom: 10%;
@@ -394,19 +435,16 @@ a {
   .header__return {
     margin-left: 0;
   }
-
   .__solid {
     transform: translate(-2px, -113px);
   }
   .__solid:hover {
     transform: translate(-2px, -123px);
   }
-
   .bloc__page {
     top: 20em;
     margin-top: 0;
   }
-
   .bloc__menu {
     flex-direction: column;
     margin: 0;
@@ -429,7 +467,6 @@ a {
   .bloc__menu .bloc__menu--item:hover .bloc__menu--entree-check {
     transform: translate(58px, -10px);
   }
-
   .btn__command {
     margin-left: 40%;
     margin-bottom: 10%;
@@ -453,7 +490,6 @@ a {
 .bloc__menu .bloc__menu-dessert {
     margin-top: 3%;
   }
-
   .btn__command {
     margin-left: 45%;
   }
